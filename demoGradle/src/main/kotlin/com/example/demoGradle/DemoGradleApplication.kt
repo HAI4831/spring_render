@@ -9,3 +9,10 @@ class DemoGradleApplication
 fun main(args: Array<String>) {
 	runApplication<DemoGradleApplication>(*args)
 }
+@RestController
+	class DemoController{
+		@GetMapping("/hello")
+		fun hello():String{
+			return "Hello render"
+		}
+	}
